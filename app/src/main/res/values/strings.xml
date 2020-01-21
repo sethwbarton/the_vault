@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">the_vault</string>
+    <string name="dominionMainActivityButtonText">Dominion Setup</string>
+    <string name="turnOrderMainActivityButtonText">Turn Order</string>
 </resources>

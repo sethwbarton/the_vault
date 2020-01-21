@@ -3,6 +3,7 @@
     package="androidteam.cs340.the_vault">
 
     <application
+        android:fullBackupContent="@android:"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,6 +16,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="$Dominion.DominionActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name="$TurnOrder.TurnOrderActivity"
+            android:parentActivityName=".MainActivity">
         </activity>
     </application>
 

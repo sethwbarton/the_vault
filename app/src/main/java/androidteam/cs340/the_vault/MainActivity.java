@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         dominionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent dominionIntent = DominionActivity.newIntent(MainActivity.this);
+                Intent dominionIntent = new Intent(getBaseContext(), DominionActivity.class);
                 startActivity(dominionIntent);
             }
         });
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         turnOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent turnOrderIntent = TurnOrderActivity.newIntent(MainActivity.this);
+                Intent turnOrderIntent = new Intent(getBaseContext(), TurnOrderActivity.class);
                 startActivity(turnOrderIntent);
             }
         });

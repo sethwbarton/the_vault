@@ -1,4 +1,4 @@
-package androidteam.cs340.the_vault;
+package androidteam.cs340.the_vault.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidteam.cs340.the_vault.Dominion.DominionActivity;
-import androidteam.cs340.the_vault.TurnOrder.TurnOrderActivity;
+import androidteam.cs340.the_vault.R;
 
 public class MainActivity extends AppCompatActivity {
 

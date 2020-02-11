@@ -1,0 +1,6 @@
+package androidteam.cs340.the_vault.Model;
+
+public enum Expansion {
+    BASE, INTRIGUE, SEASIDE, PROSPERITY, HINTERLANDS, DARKAGES,
+    ADVENTURES, EMPIRES, NOCTURNE, RENAISSANCE, ALCHEMY, CORNUCOPIA, GUILDS;
+}

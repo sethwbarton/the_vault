@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidteam.cs340.the_vault.Model.Data;
 import androidteam.cs340.the_vault.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Data.instance();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

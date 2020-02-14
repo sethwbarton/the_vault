@@ -8,7 +8,7 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.Switch;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -22,20 +22,19 @@ public class DominionActivity extends AppCompatActivity {
     private DominionPresentor presentor = new DominionPresentor();
     /* Buttons */
     private Button nextButton;
-    private RadioGroup dominionExpansionRadioGroup;
-    private RadioButton domBaseSetRadioButton;
-    private RadioButton domIntrigueRadioButton;
-    private RadioButton domSeasideRadioButton;
-    private RadioButton domCornucopiaRadioButton;
-    private RadioButton domAdventuresRadioButton;
-    private RadioButton domAlchemyRadioButton;
-    private RadioButton domDarkAgesRadioButton;
-    private RadioButton domGuildsRadioButton;
-    private RadioButton domHinterlandsRadioButton;
-    private RadioButton domProsperityRadioButton;
-    private RadioButton domRenaissanceRadioButton;
-    private RadioButton domNocturneRadioButton;
-    private RadioButton domEmpiresRadioButton;
+    private Switch domBaseSetSwitch;
+    private Switch domIntrigueSwitch;
+    private Switch domSeasideSwitch;
+    private Switch domCornucopiaSwitch;
+    private Switch domAdventuresSwitch;
+    private Switch domAlchemySwitch;
+    private Switch domDarkAgesSwitch;
+    private Switch domGuildsSwitch;
+    private Switch domHinterlandsSwitch;
+    private Switch domProsperitySwitch;
+    private Switch domRenaissanceSwitch;
+    private Switch domNocturneSwitch;
+    private Switch domEmpiresSwitch;
 
     private TextView domBaseSetTextView;
     private TextView domIntrigueTextView;
@@ -52,24 +51,6 @@ public class DominionActivity extends AppCompatActivity {
         String[] domExpansionTextArray = getResources().getStringArray(R.array.dominionExpansionsStringArray);
         domBaseSetTextView.setText(domExpansionTextArray[0]);
         domIntrigueTextView.setText(domExpansionTextArray[1]);
-
-        /* Set up the RadioGroup */
-        dominionExpansionRadioGroup = findViewById(R.id.dominionExpansionRadioGroup);
-
-        /* Set up the RadioButtons */
-        domBaseSetRadioButton = findViewById(R.id.domBaseSetRadioButton);
-        domIntrigueRadioButton = findViewById(R.id.domIntrigueRadioButton);
-
-
-        /* Set up checkChangeListener */
-        dominionExpansionRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton checkedExpansionRadioButton = group.findViewById(checkedId);
-
-                boolean isChecked = checkedExpansionRadioButton.isChecked();
-            }
-        });
     }
 
 

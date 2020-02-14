@@ -2,4 +2,19 @@
     <string name="app_name">the_vault</string>
     <string name="dominionMainActivityButtonText">Dominion Setup</string>
     <string name="turnOrderMainActivityButtonText">Turn Order</string>
+    <string-array name="dominionExpansionsStringArray">
+        <item>Base Set</item>
+        <item>Intrigue</item>
+        <item>Seaside</item>
+        <item>Cornucopia</item>
+        <item>Adventures</item>
+        <item>Alchemy</item>
+        <item>Dark Ages</item>
+        <item>Guilds</item>
+        <item>Hinterlands</item>
+        <item>Prosperity</item>
+        <item>Renaissance</item>
+        <item>Nocturne</item>
+        <item>Empires</item>
+    </string-array>
 </resources>

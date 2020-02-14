@@ -1,25 +1,21 @@
 package androidteam.cs340.the_vault.Activities;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.Switch;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import androidteam.cs340.the_vault.Presentors.DominionPresentor;
+import androidteam.cs340.the_vault.Presentors.DominionPresenter;
 import androidteam.cs340.the_vault.R;
 
 public class DominionActivity extends AppCompatActivity {
 
 //    Resources res = getResources();
 
-    private DominionPresentor presentor = new DominionPresentor();
+    private DominionPresenter presentor = new DominionPresenter();
     /* Buttons */
     private Button nextButton;
     private Switch domBaseSetSwitch;

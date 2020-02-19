@@ -1,72 +1,90 @@
 package androidteam.cs340.the_vault.Presentors;
 
-public class DominionPresenter {
+import java.util.ArrayList;
 
-    private boolean usingBaseSet;
-    private boolean usingIntrigue;
-    private boolean usingSeaside;
-    private boolean usingGuilds;
-    private boolean usingRenaissance;
-    private boolean usingEmpires;
-    private boolean usingAdventures;
-    private boolean usingAlchemy;
-    private boolean usingCornucopia;
-    private boolean usingDarkAges;
-    private boolean usingHinterlands;
-    private boolean usingProsperity;
-    private boolean usingNocturne;
+import androidteam.cs340.the_vault.Model.Card;
+import androidteam.cs340.the_vault.Model.DominionData;
+
+public class DominionPresenter implements DominionPresenterInterface{
+
+
+    DominionData data = DominionData.instance();
 
     public DominionPresenter() {}
 
-    public void setUsingBaseSet(boolean usingBaseSet) {
-        this.usingBaseSet = usingBaseSet;
+
+    @Override
+    public void setUsingBase(boolean bool) {
+        data.setUsingBase(bool);
     }
 
-    public void setUsingIntrigue(boolean usingIntrigue) {
-        this.usingIntrigue = usingIntrigue;
+    @Override
+    public void setUsingIntrigue(boolean bool) {
+        data.setUsingIntrigue(bool);
     }
 
-    public void setUsingSeaside(boolean usingSeaside) {
-        this.usingSeaside = usingSeaside;
+    @Override
+    public void setUsingSeaside(boolean bool) {
+        data.setUsingSeaside(bool);
     }
 
-    public void setUsingGuilds(boolean usingGuilds) {
-        this.usingGuilds = usingGuilds;
+    @Override
+    public void setUsingProsperity(boolean bool) {
+        data.setUsingProsperity(bool);
     }
 
-    public void setUsingRenaissance(boolean usingRenaissance) {
-        this.usingRenaissance = usingRenaissance;
+    @Override
+    public void setUsingHinterlands(boolean bool) {
+        data.setUsingHinterlands(bool);
     }
 
-    public void setUsingEmpires(boolean usingEmpires) {
-        this.usingEmpires = usingEmpires;
+    @Override
+    public void setUsingDarkages(boolean bool) {
+        data.setUsingDarkAges(bool);
     }
 
-    public void setUsingAdventures(boolean usingAdventures) {
-        this.usingAdventures = usingAdventures;
+    @Override
+    public void setUsingAdventures(boolean bool) {
+        data.setUsingAdventures(bool);
     }
 
-    public void setUsingAlchemy(boolean usingAlchemy) {
-        this.usingAlchemy = usingAlchemy;
+    @Override
+    public void setUsingEmpires(boolean bool) {
+        data.setUsingEmpires(bool);
     }
 
-    public void setUsingCornucopia(boolean usingCornucopia) {
-        this.usingCornucopia = usingCornucopia;
+    @Override
+    public void setUsingNocturne(boolean bool) {
+        data.setUsingNocturne(bool);
     }
 
-    public void setUsingDarkAges(boolean usingDarkAges) {
-        this.usingDarkAges = usingDarkAges;
+    @Override
+    public void setUsingRenaissance(boolean bool) {
+        data.setUsingRenaissance(bool);
     }
 
-    public void setUsingHinterlands(boolean usingHinterlands) {
-        this.usingHinterlands = usingHinterlands;
+    @Override
+    public void setUsingAlchemy(boolean bool) {
+        data.setUsingAlchemy(bool);
     }
 
-    public void setUsingProsperity(boolean usingProsperity) {
-        this.usingProsperity = usingProsperity;
+    @Override
+    public void setUsingCornucopia(boolean bool) {
+        data.setUsingCornucopia(bool);
     }
 
-    public void setUsingNocturne(boolean usingNocturne) {
-        this.usingNocturne = usingNocturne;
+    @Override
+    public void setUsingGuilds(boolean bool) {
+        data.setUsingGuilds(bool);
+    }
+
+    @Override
+    public void selectCards() {
+
+    }
+
+    @Override
+    public ArrayList<Card> getCardSet() {
+        return null;
     }
 }

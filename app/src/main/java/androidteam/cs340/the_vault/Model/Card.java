@@ -4,13 +4,16 @@ public class Card {
     private String name;
     private String cost;
     private String type;
-    private Enum<Expansion> expansion;
+    private String expansion;
+//    private Enum<Expansion> expansion;
 
-    public Card(String name, String cost, String type, Enum<Expansion> expansion) {
+
+    public Card(String name, String cost, String type, String expansion) {
         this.name = name;
         this.cost = cost;
         this.type = type;
         this.expansion = expansion;
+//        this.expansion = expansion;
     }
 
     public String getName() {
@@ -25,7 +28,9 @@ public class Card {
         return type;
     }
 
-    public Enum<Expansion> getExpansion() {
-        return expansion;
-    }
+    public String getExpansion() { return expansion; }
+
+//    public Enum<Expansion> getExpansion() {
+//        return expansion;
+//    }
 }

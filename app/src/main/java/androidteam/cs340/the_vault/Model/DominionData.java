@@ -1,11 +1,22 @@
 package androidteam.cs340.the_vault.Model;
 
-import java.util.ArrayList;
+import android.content.Context;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import androidteam.cs340.the_vault.Database.DominionDAO;
 import androidteam.cs340.the_vault.Presentors.DominionPresenterInterface;
 
 public class DominionData implements DominionPresenterInterface {
     private static DominionData _instance;
+    private static DominionDAO _dao;
+
+    public static DominionData instance(Context context) {
+        _dao = new DominionDAO(context);
+        return instance();
+    }
+
     public static DominionData instance() {
         if (_instance == null){
             _instance = new DominionData();
@@ -134,13 +145,26 @@ public class DominionData implements DominionPresenterInterface {
     }
 
     @Override
-    public void selectCards() {
-
-    }
+    public void selectCards() { }
 
     @Override
     public ArrayList<Card> getCardSet() {
-        return null;
+        ArrayList<String> expansions = new ArrayList<String>();
+        if (usingBase) expansions.add("BASE");
+        if (usingIntrigue) expansions.add("INTRIGUE");
+        if (usingSeaside) expansions.add("SEASIDE");
+        if (usingGuilds) expansions.add("GUILDS");
+        if (usingRenaissance) expansions.add("RENAISSANCE");
+        if (usingEmpires) expansions.add("EMPIRES");
+        if (usingAdventures) expansions.add("ADVENTURES");
+        if (usingAlchemy) expansions.add("ALCHEMY");
+        if (usingCornucopia) expansions.add("CORNUCOPIA");
+        if (usingDarkages) expansions.add("DARKAGES");
+        if (usingHinterlands) expansions.add("HINTERLANDS");
+        if (usingProsperity) expansions.add("PROSPERITY");
+        if (usingNocturne) expansions.add("NOCTURNE");
+
+        return expansions.size() > 0 ? _dao.getCards(expansions) : _dao.getCards();
     }
 
 }

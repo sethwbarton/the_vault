@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "example.sqlite3";
+    public static final String DATABASE_NAME = "dominion_cards.sqlite3";
 
     private Context context;
 

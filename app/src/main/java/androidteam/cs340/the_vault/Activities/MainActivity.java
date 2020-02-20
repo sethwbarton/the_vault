@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
         DominionData.instance();
         super.onCreate(savedInstanceState);
+
+
+        // Hides the title bar
+        try {
+            this.getSupportActionBar().hide();
+        }
+        catch (NullPointerException e){}
+
         setContentView(R.layout.activity_main);
 
         db = new DatabaseHelper(this).getReadableDatabase();
@@ -37,17 +45,17 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
         /* Dominion Button */
-        dominionButton = findViewById(R.id.dominionMainButton);
+        dominionButton = findViewById(R.id.dominionActivityButton);
         dominionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent dominionIntent = new Intent(getBaseContext(), DominionActivity.class);
+                Intent dominionIntent = new Intent(getBaseContext(), ExpansionsActivity.class);
                 startActivity(dominionIntent);
             }
         });
 
         /* Turn Order Button */
-        turnOrderButton = findViewById(R.id.turnOrderMainButton);
+        turnOrderButton = findViewById(R.id.turnOrderActivityButton);
         turnOrderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

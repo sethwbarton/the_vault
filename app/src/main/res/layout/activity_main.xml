@@ -2,20 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#587AA6"
     android:gravity="center"
     android:orientation="vertical">
 
-    <Button
+
+    <TextView
+        android:id="@+id/expansionsTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/dominionMainButton"
-        android:text="@string/dominionMainActivityButtonText"/>
-
+        android:layout_gravity="top"
+        android:layout_margin="20sp"
+        android:bufferType="normal"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:paddingBottom="50sp"
+        android:text="The Vault"
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textSize="46sp" />
 
     <Button
+        android:id="@+id/dominionActivityButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/turnOrderMainButton"
-        android:text="@string/turnOrderMainActivityButtonText"/>
+        android:layout_gravity="bottom"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="@string/dominionMainActivityButtonText"
+        android:textColor="#F2F2F2"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/turnOrderActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="@string/turnOrderMainActivityButtonText"
+        android:textColor="#F2F2F2"
+        android:textSize="18sp" />
 
 </LinearLayout>

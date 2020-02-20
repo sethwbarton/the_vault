@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidteam.cs340.the_vault.Presentors.DominionPresenter;
 import androidteam.cs340.the_vault.R;
 
-public class DominionActivity extends AppCompatActivity {
+public class ExpansionsActivity extends AppCompatActivity {
 
 //    Resources res = getResources();
 
@@ -39,11 +39,10 @@ public class DominionActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        setContentView(R.layout.activity_dominion);
+        setContentView(R.layout.activity_expansions);
 
         /* Set the texts of the expansions */
-        domBaseSetTextView = findViewById(R.id.domBaseSetTextView);
-        domIntrigueTextView = findViewById(R.id.domIntrigueTextView);
+        domIntrigueTextView = findViewById(R.id.intrigueButton);
         String[] domExpansionTextArray = getResources().getStringArray(R.array.dominionExpansionsStringArray);
         domBaseSetTextView.setText(domExpansionTextArray[0]);
         domIntrigueTextView.setText(domExpansionTextArray[1]);

@@ -21,10 +21,10 @@ public interface DominionPresenterInterface {
     public abstract void setUsingCornucopia(boolean bool);
     public abstract void setUsingGuilds(boolean bool);
 
-    //gets the list of all possible cards from the database and selects 10, storing those 10 in the Dominion data
+    //gets the list of all possible Cards from the database and selects 10, storing those 10 in the Dominion data
     public abstract void selectCards();
 
-    //returns the ten cards to the activity that will be played with
+    //returns the ten Cards to the activity that will be played with
     public abstract ArrayList<Card> getCardSet();
 
 }

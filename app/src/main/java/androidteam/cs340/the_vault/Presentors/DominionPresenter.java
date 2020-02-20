@@ -40,7 +40,7 @@ public class DominionPresenter implements DominionPresenterInterface{
 
     @Override
     public void setUsingDarkages(boolean bool) {
-        data.setUsingDarkAges(bool);
+        //data.setUsingDarkAges(bool);
     }
 
     @Override

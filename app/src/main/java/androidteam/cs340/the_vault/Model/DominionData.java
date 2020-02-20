@@ -13,7 +13,7 @@ public class DominionData implements DominionPresenterInterface {
         return _instance;
     }
 
-    private ArrayList<Card> allCards = new ArrayList<>(); //for the complete set of possible cards
+    private ArrayList<Card> allCards = new ArrayList<>(); //for the complete set of possible Cards
     private ArrayList<Card> cardSeet = new ArrayList<>();
     private boolean usingBase;
     private boolean usingIntrigue;

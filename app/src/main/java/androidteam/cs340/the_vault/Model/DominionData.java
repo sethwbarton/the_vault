@@ -3,7 +3,7 @@ package androidteam.cs340.the_vault.Model;
 import android.content.Context;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 import androidteam.cs340.the_vault.Database.DominionDAO;
 import androidteam.cs340.the_vault.Presentors.DominionPresenterInterface;
@@ -25,7 +25,12 @@ public class DominionData implements DominionPresenterInterface {
     }
 
     private ArrayList<Card> allCards = new ArrayList<>(); //for the complete set of possible Cards
-    private ArrayList<Card> cardSeet = new ArrayList<>();
+
+    public ArrayList<Card> getPickedCardSet() {
+        return pickedCardSet;
+    }
+
+    private ArrayList<Card> pickedCardSet = new ArrayList<>();
     private boolean usingBase;
     private boolean usingIntrigue;
     private boolean usingSeaside;
@@ -145,7 +150,19 @@ public class DominionData implements DominionPresenterInterface {
     }
 
     @Override
-    public void selectCards() { }
+    public void selectCards() {
+        Random rand = new Random();
+        this.allCards = this.getCardSet();
+        ArrayList<Integer> picked = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            int num = rand.nextInt(this.allCards.size());
+            while (picked.contains(num)) {
+                num = rand.nextInt(this.allCards.size());
+            }
+            this.pickedCardSet.add(this.allCards.get(num));
+            picked.add(num);
+        }
+    }
 
     @Override
     public ArrayList<Card> getCardSet() {
@@ -166,5 +183,4 @@ public class DominionData implements DominionPresenterInterface {
 
         return expansions.size() > 0 ? _dao.getCards(expansions) : _dao.getCards();
     }
-
 }

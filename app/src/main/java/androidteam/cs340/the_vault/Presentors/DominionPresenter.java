@@ -1,12 +1,13 @@
 package androidteam.cs340.the_vault.Presentors;
 
+import android.widget.Button;
+
 import java.util.ArrayList;
 
 import androidteam.cs340.the_vault.Model.Card;
 import androidteam.cs340.the_vault.Model.DominionData;
 
 public class DominionPresenter implements DominionPresenterInterface{
-
 
     DominionData data = DominionData.instance();
 
@@ -40,7 +41,7 @@ public class DominionPresenter implements DominionPresenterInterface{
 
     @Override
     public void setUsingDarkages(boolean bool) {
-        //data.setUsingDarkAges(bool);
+        data.setUsingDarkages(bool);
     }
 
     @Override
@@ -80,11 +81,13 @@ public class DominionPresenter implements DominionPresenterInterface{
 
     @Override
     public void selectCards() {
-
+        data.selectCards();
     }
 
     @Override
     public ArrayList<Card> getCardSet() {
-        return null;
+        return data.getPickedCardSet();
     }
+
+
 }

@@ -30,6 +30,7 @@
         android:layout_marginRight="20sp"
         android:layout_marginBottom="5sp"
         android:background="@drawable/btn_rounded"
+        android:checked="true"
         android:fontFamily="@font/cinzel_decorative_black"
         android:text="Intrigue"
         android:textColor="#F2F2F2"

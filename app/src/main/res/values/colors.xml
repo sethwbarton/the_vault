@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
+<!--    <color name="colorPrimary">#3d9454</color>-->
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="expansionButtonTextColor">#F2F2F2</color>
+    <color name="expansionButtonSelectedColor">#286338</color>
 </resources>

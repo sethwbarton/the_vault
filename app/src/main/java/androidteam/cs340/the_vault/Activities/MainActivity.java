@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         try {
             this.getSupportActionBar().hide();
         }
-        catch (NullPointerException e){}
+        catch (NullPointerException e){
+            e.printStackTrace();
+        }
 
         setContentView(R.layout.activity_main);
 

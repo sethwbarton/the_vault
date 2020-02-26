@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#587AA6"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.DiceActivity">
+
+    <TextView
+        android:id="@+id/dicePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How many dice would you like?"
+        android:textColor="#F2F2F2"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/oneDieButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="One"
+        android:textColor="#F2F2F2"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <Button
+        android:id="@+id/twoDiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="Two"
+        android:textColor="#F2F2F2"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageDie1"
+            android:layout_width="131dp"
+            android:layout_height="121dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/die"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageDie2"
+            android:layout_width="131dp"
+            android:layout_height="121dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/die"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+</LinearLayout>

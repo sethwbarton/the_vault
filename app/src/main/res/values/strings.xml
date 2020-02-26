@@ -2,6 +2,7 @@
     <string name="app_name">the_vault</string>
     <string name="dominionMainActivityButtonText">Dominion Setup</string>
     <string name="turnOrderMainActivityButtonText">Turn Order</string>
+    <string name="diceMainActivityButtonText">Dice</string>
     <string-array name="dominionExpansionsStringArray">
         <item>Base Set</item>
         <item>Intrigue</item>

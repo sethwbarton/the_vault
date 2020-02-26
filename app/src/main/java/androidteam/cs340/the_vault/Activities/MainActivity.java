@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     /* Buttons */
     private Button dominionButton;
     private Button turnOrderButton;
+    private Button diceButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent turnOrderIntent = new Intent(getBaseContext(), TurnOrderActivity.class);
+                startActivity(turnOrderIntent);
+            }
+        });
+
+        diceButton = findViewById(R.id.diceActivityButton);
+        diceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent turnOrderIntent = new Intent(getBaseContext(), DiceActivity.class);
                 startActivity(turnOrderIntent);
             }
         });

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button dominionButton;
     private Button turnOrderButton;
     private Button diceButton;
+    private Button catanBoardButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +58,17 @@ public class MainActivity extends AppCompatActivity {
         diceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent turnOrderIntent = new Intent(getBaseContext(), DiceActivity.class);
-                startActivity(turnOrderIntent);
+                Intent diceIntent = new Intent(getBaseContext(), DiceActivity.class);
+                startActivity(diceIntent);
+            }
+        });
+
+        catanBoardButton = findViewById(R.id.catanBoardActivityButton);
+        catanBoardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent catanBoardIntent = new Intent(getBaseContext(), CatanBoardActivity.class);
+                startActivity(catanBoardIntent);
             }
         });
     }

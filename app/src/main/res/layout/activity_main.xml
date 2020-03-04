@@ -57,4 +57,16 @@
         android:textColor="#F2F2F2"
         android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/catanBoardActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="@string/catanBoardMainActivityButtonText"
+        android:textColor="#F2F2F2"
+        android:textSize="18sp" />
+
 </LinearLayout>

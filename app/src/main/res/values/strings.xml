@@ -3,6 +3,7 @@
     <string name="dominionMainActivityButtonText">Dominion Setup</string>
     <string name="turnOrderMainActivityButtonText">Turn Order</string>
     <string name="diceMainActivityButtonText">Dice</string>
+    <string name="catanBoardMainActivityButtonText">Catan Board Setup</string>
     <string-array name="dominionExpansionsStringArray">
         <item>Base Set</item>
         <item>Intrigue</item>

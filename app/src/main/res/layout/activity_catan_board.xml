@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#587AA6"
+    android:gravity="center"
     tools:context=".Activities.CatanBoardActivity">
 
     <LinearLayout
@@ -12,10 +14,23 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         >
-
+        <Button
+            android:id="@+id/expansionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="50sp"
+            android:background="@drawable/btn_rounded"
+            android:checked="true"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Expansion"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
         <LinearLayout
             android:id="@+id/baseBoard"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -30,19 +45,19 @@
                     android:id="@+id/bhexagon1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -56,25 +71,25 @@
                     android:id="@+id/bhexagon4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon5"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon6"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon7"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -88,31 +103,31 @@
                     android:id="@+id/bhexagon8"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon9"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon10"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon11"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon12"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -126,25 +141,25 @@
                     android:id="@+id/bhexagon13"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon14"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon15"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon16"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -158,19 +173,19 @@
                     android:id="@+id/bhexagon17"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon18"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/bhexagon19"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -179,6 +194,7 @@
 
         <LinearLayout
             android:id="@+id/expansionBoard"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -193,19 +209,19 @@
                     android:id="@+id/ehexagon1"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -219,25 +235,25 @@
                     android:id="@+id/ehexagon4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon5"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon6"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon7"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -251,31 +267,31 @@
                     android:id="@+id/ehexagon8"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon9"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon10"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon11"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon12"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -289,37 +305,37 @@
                     android:id="@+id/ehexagon13"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon14"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon15"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon16"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon17"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon18"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
             </LinearLayout>
 
@@ -333,31 +349,31 @@
                     android:id="@+id/ehexagon19"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon20"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon21"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon22"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon23"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -372,25 +388,25 @@
                     android:id="@+id/ehexagon24"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon25"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon26"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon27"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>
@@ -405,19 +421,19 @@
                     android:id="@+id/ehexagon28"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon29"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
                 <ImageView
                     android:id="@+id/ehexagon30"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/brick_hexagon"
+                    app:srcCompat="@drawable/desert_hexagon"
                     />
 
             </LinearLayout>

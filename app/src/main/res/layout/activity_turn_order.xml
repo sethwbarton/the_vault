@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#587AA6"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.DiceActivity">
+
+
+    <TextView
+        android:id="@+id/turnOrderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="50sp"
+        android:bufferType="normal"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="Number Yourselves"
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textSize="24sp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/playerNumberPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:backgroundTint="#F2F2F2"
+        android:fadingEdge="horizontal"
+        android:hint="How Many Players Do You Have?"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textColorHighlight="#F2F2F2"
+        android:textColorHint="#F2F2F2"
+        android:textColorLink="#F2F2F2" />/>
+
+
+    <TextView
+        android:id="@+id/turnOrderSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="20sp"
+        android:bufferType="normal"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="Your Turn Order: "
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/turnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="20sp"
+        android:bufferType="normal"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="1, 2, 3, 4"
+        android:textAlignment="center"
+        android:textColor="#F2F2F2"
+        android:textSize="24sp" />
+
+</LinearLayout>

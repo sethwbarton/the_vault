@@ -20,126 +20,170 @@
         android:textColor="#F2F2F2"
         android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/intrigueButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:checked="true"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Intrigue"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/seasideButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Seaside"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/seasideButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Seaside"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/hinterlandsButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Hinterlands"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/intrigueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:checked="true"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Intrigue"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/darkAgesButton"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Dark Ages"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:layout_height="60dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/prosperityButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Prosperity"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/darkAgesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Dark Ages"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/alchemyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Alchemy"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/hinterlandsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Hinterlands"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/guildsButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Guilds"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/cornucopiaButton"
+        <Button
+            android:id="@+id/alchemyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Alchemy"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/prosperityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Prosperity"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Cornucopia"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/guildsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Guilds"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/cornucopiaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Cornucopia"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"></LinearLayout>
 
     <TextView
         android:id="@+id/nextButton"
@@ -147,6 +191,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:layout_margin="20sp"
+        android:paddingBottom="20sp"
         android:bufferType="normal"
         android:clickable="true"
         android:fontFamily="@font/cinzel_decorative_black"

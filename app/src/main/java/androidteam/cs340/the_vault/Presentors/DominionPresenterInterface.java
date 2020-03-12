@@ -26,5 +26,7 @@ public interface DominionPresenterInterface {
 
     //returns the ten Cards to the activity that will be played with
     public abstract ArrayList<Card> getCardSet();
+    //gets the special cards
+    public abstract  ArrayList<Card> getSpecialCardSet();
 
 }

@@ -89,5 +89,8 @@ public class DominionPresenter implements DominionPresenterInterface{
         return data.getPickedCardSet();
     }
 
-
+    @Override
+    public ArrayList<Card> getSpecialCardSet() {
+        return data.getSpecialPickedCardSet();
+    }
 }

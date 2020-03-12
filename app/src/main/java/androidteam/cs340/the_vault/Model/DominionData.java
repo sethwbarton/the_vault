@@ -31,6 +31,8 @@ public class DominionData implements DominionPresenterInterface {
     }
 
     private ArrayList<Card> pickedCardSet = new ArrayList<>();
+    private ArrayList<Card> specialPickedCardSet = new ArrayList<>();
+
     private boolean usingBase;
     private boolean usingIntrigue;
     private boolean usingSeaside;
@@ -44,6 +46,14 @@ public class DominionData implements DominionPresenterInterface {
     private boolean usingHinterlands;
     private boolean usingProsperity;
     private boolean usingNocturne;
+
+    public ArrayList<Card> getSpecialPickedCardSet() {
+        return specialPickedCardSet;
+    }
+
+    public void setSpecialPickedCardSet(ArrayList<Card> specialPickedCardSet) {
+        this.specialPickedCardSet = specialPickedCardSet;
+    }
 
     public boolean isUsingBase() {
         return usingBase;
@@ -154,13 +164,41 @@ public class DominionData implements DominionPresenterInterface {
         Random rand = new Random();
         this.allCards = this.getCardSet();
         ArrayList<Integer> picked = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        ArrayList<Integer> specialPicked = new ArrayList<>();
+        int kingdomCardsPicked =0;
+        int specialCardsPicked =0;
+        //make sure we are getting 10 actual kingdom cards, will require a bit of database editing as well
+        while (kingdomCardsPicked != 10) {
+            //get the next random index for the next card
             int num = rand.nextInt(this.allCards.size());
-            while (picked.contains(num)) {
+            //check if its one of the special cards
+            if(this.allCards.get(num).getType() == "EVENT" || this.allCards.get(num).getType() == "PROJECT"
+                    || this.allCards.get(num).getType() == "LANDMARK" ){
+                //if we have already grabbed 2 special cards pick a new card that is not special
+                if(specialCardsPicked >= 2){
+                    while(this.allCards.get(num).getType() == "EVENT" || this.allCards.get(num).getType() == "PROJECT"
+                            || this.allCards.get(num).getType() == "LANDMARK") {
+                        num = rand.nextInt(this.allCards.size());
+                    }
+                }
+            }
+            //make sure we dont pick the same card twice
+            while (picked.contains(num) || specialPicked.contains(num)) {
                 num = rand.nextInt(this.allCards.size());
             }
-            this.pickedCardSet.add(this.allCards.get(num));
-            picked.add(num);
+            //add the card we picked to the set of picked cards as well as its index
+
+            //we don't increment the kingdom cards picked if it was a special card picked
+            if(this.allCards.get(num).getType() == "EVENT" || this.allCards.get(num).getType() == "PROJECT" || this.allCards.get(num).getType() == "LANDMARK"){
+                this.specialPickedCardSet.add(this.allCards.get(num));
+                specialPicked.add(num);
+                specialCardsPicked++;
+            }
+            else{
+                this.pickedCardSet.add(this.allCards.get(num));
+                picked.add(num);
+                kingdomCardsPicked++;
+            }
         }
     }
 
@@ -182,5 +220,10 @@ public class DominionData implements DominionPresenterInterface {
         if (usingNocturne) expansions.add("NOCTURNE");
 
         return expansions.size() > 0 ? _dao.getCards(expansions) : _dao.getCards();
+    }
+
+    @Override
+    public ArrayList<Card> getSpecialCardSet() {
+        return getSpecialPickedCardSet();
     }
 }

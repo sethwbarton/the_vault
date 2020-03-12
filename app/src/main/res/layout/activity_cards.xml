@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#587AA6"
@@ -18,156 +19,236 @@
         android:text="Your Cards"
         android:textAlignment="center"
         android:textColor="#F2F2F2"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        tools:ignore="RtlCompat" />
 
-    <Button
-        android:id="@+id/card1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/card2"
+        <Button
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/card3"
+        <Button
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/card4"
+        <Button
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/card5"
+        <Button
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/card8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/card6"
+        <Button
+            android:id="@+id/card9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/card10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="card"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/card7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/cardS1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Special"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/card8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/card9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/card10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginBottom="5sp"
-        android:background="@drawable/btn_rounded"
-        android:fontFamily="@font/cinzel_decorative_black"
-        android:text="card"
-        android:textColor="#F2F2F2"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/cardS2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Special"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -13,7 +13,7 @@
         android:id="@+id/dicePrompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How many dice would you like?"
+        android:text="What dice do you want to roll?"
         android:textColor="#F2F2F2"
         android:textSize="25sp"
         android:textStyle="italic|bold"
@@ -30,7 +30,7 @@
         android:layout_margin="20sp"
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/cinzel_decorative_black"
-        android:text="One"
+        android:text="One D6"
         android:textColor="#F2F2F2"
         android:textSize="18sp"
         android:visibility="visible"
@@ -48,7 +48,25 @@
         android:layout_margin="20sp"
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/cinzel_decorative_black"
-        android:text="Two"
+        android:text="Two D6"
+        android:textColor="#F2F2F2"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
+
+    <Button
+        android:id="@+id/d8Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/cinzel_decorative_black"
+        android:text="One d8"
         android:textColor="#F2F2F2"
         android:textSize="18sp"
         android:visibility="visible"
@@ -77,6 +95,13 @@
             android:layout_height="121dp"
             android:visibility="gone"
             app:srcCompat="@drawable/die"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/imageD8"
+            android:layout_width="131dp"
+            android:layout_height="121dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/d8_1"
             android:layout_marginLeft="20dp"/>
     </LinearLayout>
 </LinearLayout>

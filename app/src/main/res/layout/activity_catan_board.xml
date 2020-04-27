@@ -20,13 +20,27 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="50sp"
+            android:layout_marginTop="35sp"
             android:layout_marginRight="20sp"
-            android:layout_marginBottom="50sp"
+            android:layout_marginBottom="5sp"
             android:background="@drawable/btn_rounded"
             android:checked="true"
             android:fontFamily="@font/cinzel_decorative_black"
             android:text="Expansion"
+            android:textColor="#F2F2F2"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/reshuffleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="35sp"
+            android:background="@drawable/btn_rounded"
+            android:fontFamily="@font/cinzel_decorative_black"
+            android:text="Reshuffle Tiles"
             android:textColor="#F2F2F2"
             android:textSize="18sp" />
         <LinearLayout
@@ -439,8 +453,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

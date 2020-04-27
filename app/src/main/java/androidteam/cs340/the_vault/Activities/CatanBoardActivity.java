@@ -21,6 +21,7 @@ public class CatanBoardActivity extends AppCompatActivity {
     private int selectedColor = -14130376;
 
     private Button expansionButton;
+    private Button reshuffleButton;
     private LinearLayout baseBoardLayout;
     private LinearLayout expansionBoardLayout;
 
@@ -100,6 +101,14 @@ public class CatanBoardActivity extends AppCompatActivity {
                     baseBoardLayout.setVisibility(View.VISIBLE);
                     expansionButton.setTextColor(getResources().getColor(R.color.expansionButtonTextColor));
                 }
+            }
+        });
+
+        reshuffleButton = findViewById(R.id.reshuffleButton);
+        reshuffleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                presentor.createBoards();
             }
         });
 

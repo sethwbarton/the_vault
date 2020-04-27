@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#587AA6"
     android:gravity="center"
-    android:orientation="vertical":
+    android:orientation="vertical"
     tools:context=".Activities.DiceActivity">
 
     <TextView
